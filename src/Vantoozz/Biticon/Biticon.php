@@ -8,7 +8,7 @@ class Biticon
     private $size = 400;
 
 
-    public function generate($filemane, $sex = null)
+    public function generate($filename, $sex = null)
     {
         $parts = array('background', 'face', 'clothes', 'hair', 'eyes', 'mouth');
 
@@ -23,7 +23,7 @@ class Biticon
             $img->insert($images[array_rand($images)]);
         }
 
-        $img->save($filemane);
+        $img->save($filename);
     }
 
 }
